@@ -411,7 +411,7 @@
           :has(#TabsToolbar-customization-target > zen-workspace-creation),
           /* When a folder label is being edited */
           :has(.tab-label-container-editing),
-          :has(#TabsToolbar[open="true"]) /*When edit theme picker is open; to allow you to see what the gradient looks like while editing*/
+          :has(#TabsToolbar[open="true"]) /* When edit theme picker is open */
       ) {
                 --zen-sidebar-width: var(
                     --theme-sidebar_expand_on_hover-expanded_width
@@ -439,7 +439,7 @@
           :has(#TabsToolbar-customization-target > zen-workspace-creation),
           /* When a folder label is being edited */
           :has(.tab-label-container-editing),
-          :has(#TabsToolbar[open="true"]) /*When edit theme picker is open; to allow you to see what the gradient looks like while editing*/
+          :has(#TabsToolbar[open="true"]) /* When edit theme picker is open */
       ) {
                 /* Show only active/first/no(todo) button*/
                 #zen-workspaces-button {
@@ -542,9 +542,9 @@ Sidebar Expand on Hover Experimental Features
         :has(#TabsToolbar-customization-target > zen-workspace-creation),
         /* When a folder label is being edited */
         :has(.tab-label-container-editing),
-        :has(#TabsToolbar[open="true"]) /*When edit theme picker is open; to allow you to see what the gradient looks like while editing*/
+        :has(#TabsToolbar[open="true"]) /* When edit theme picker is open */
     ) {
-        /* if Zen/user adds more buttons to the sidebar's foot, the buttons will be aligned vertically (For future-resistant changes)*/
+        /* OPTIONAL - align sidebar foot buttons vertically */
         #zen-sidebar-foot-buttons {
             /*  padding-left: 3px !important; */
             flex-direction: column !important;
@@ -629,18 +629,6 @@ Sidebar Expand on Hover Experimental Features
             /*background-image: url('chrome://browser/skin/zen-icons/selectable/star-1.svg') !important;*/
         }
 
-        /*not required since zen adds visual effects on playing audio, TEMPORARY - REALLY bad method to overlay the pause buton over the nowplaying icon*/
-        /*
-          #zen-media-playpause-button {
-            transform: translate(-63px, 5px) !important;
-            justify-content: flex-start !important;
-          }
-        */
-
-        /*#tabbrowser-tabs tab[selected] {
-            margin-left: -10px !important;
-          }*/
-
         --zen-toolbox-padding: calc(
             var(--zen-element-separation) / 2 + 1px
         ) !important;
@@ -651,12 +639,12 @@ Sidebar Expand on Hover Experimental Features
 
     /* Zen Essentials (Collapsed Bar)*/
     /*
- * CSS Quantity Queries for Tab Width
- *
- * This solution uses the :has() and :not(:has()) selectors to detect
- * the number of children (.tabbrowser-tab) inside the .zen-essentials-container
- * and sets the --theme-sidebar_expand_on_hover-essentials_collapsed_tab_height variable accordingly.
- */
+    * Determine Essentials Container Height
+    *
+    * This solution uses the :has() and :not(:has()) selectors to detect
+    * the number of children (.tabbrowser-tab) inside the .zen-essentials-container
+    * and sets the --theme-sidebar_expand_on_hover-essentials_collapsed_tab_height variable accordingly.
+    */
 
     #navigator-toolbox:not(
     [zen-has-hover],
@@ -669,11 +657,11 @@ Sidebar Expand on Hover Experimental Features
     :has(#TabsToolbar-customization-target > zen-workspace-creation),
     /* When a folder label is being edited */
     :has(.tab-label-container-editing),
-    :has(#TabsToolbar[open="true"]) /*When edit theme picker is open; to allow you to see what the gradient looks like while editing*/
+    :has(#TabsToolbar[open="true"]) /* When edit theme picker is open */
 ) {
         /* --- RANGE 1: 1 to 4 children (Does not have a 5th child) --- */
         &:not(:has(.zen-essentials-container > .tabbrowser-tab:nth-child(5))) {
-            --theme-sidebar_expand_on_hover-essentials_collapsed_tab_height: 50px;
+            --theme-sidebar_expand_on_hover-essentials_collapsed_tab_height: 50px; /*Each row of essentials is +50px tall*/
         }
 
         /* --- RANGE 2: 5 to 8 children (Has a 5th child AND does not have a 9th child) --- */
@@ -702,7 +690,7 @@ Sidebar Expand on Hover Experimental Features
         :has(#TabsToolbar-customization-target > zen-workspace-creation),
         /* When a folder label is being edited */
         :has(.tab-label-container-editing),
-        :has(#TabsToolbar[open="true"]) /*When edit theme picker is open; to allow you to see what the gradient looks like while editing*/
+        :has(#TabsToolbar[open="true"]) /* When edit theme picker is open */
     ) {
         .zen-essentials-container {
             height: var(--theme-sidebar_expand_on_hover-essentials_collapsed_tab_height) !important;
@@ -759,7 +747,7 @@ Sidebar Expand on Hover Experimental Features
         ; change "#navigator-toolbox" to "body" & adjust acoordingly later:
         :has(html#main-window > body#mainPopupSet > panel[panel-open="true"])
         */
-        :has(#TabsToolbar[open="true"]) /*When edit theme picker is open; to allow you to see what the gradient looks like while editing*/
+        :has(#TabsToolbar[open="true"]) /* When edit theme picker is open */
     ) {
         /* revert changes made )*/
         #zen-sidebar-foot-buttons {

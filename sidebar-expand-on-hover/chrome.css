@@ -136,7 +136,7 @@
                 #zen-appcontent-wrapper {
                     overflow: visible !important;
 
-                    /*MANUAL FIXES APPLIED
+                    /*
                   Used to affect window buttons>[what I presume is always the close button?]: #zen-appcontent-navbar-container:has(#nav-bar>.titlebar-buttonbox-container:last-child)
                   ^ I don't see how the window buttons relate to the padding--this might be some accidental selection the original developer made??
                   ^ Removing this pseudo prevent this issue from happening:
@@ -150,7 +150,7 @@
                         ) !important;
                         /*ENSURES width of toolbar is adjusted too, fixes #80*/
                         width: calc(0px - var(--zen-toolbox-max-width)) + 100% !important;
-                        /*OPTIONAL - Add 5px padding by default, unless var zen-element-seperation is greater*/
+                        /*to-do; bad logic - Add 5px padding by default, unless var zen-element-seperation is greater*/
                         padding-left: clamp(
                             5px,
                             var(--zen-element-separation),
@@ -197,9 +197,6 @@
                     z-index: -1;
 
                     /*Expanded Sidebar BG - */
-                    /* Manual Fix: Transparent BG on Sidebar; https://github.com/Uiniel/zen-mods/issues/83#issuecomment-3023914519*/
-                    /*[URL above is irrelevent since I made a better fix below]*/
-
                     /*background-color: var(--zen-primary-color);*/ /*Solid color backround*/ /*Fallback when --zen-main-browser-background is transparent but it does NOT have an empty value*/
 
                     background-image: var(
@@ -558,7 +555,7 @@ Sidebar Expand on Hover Experimental Features
             > #zen-create-new-button {
                 display: none !important;
             }
-            /* the collapsed sidebar view is only big enough to show the current workspace, which is redundant since the top al */
+            /* to-do: the collapsed sidebar view is only big enough to show the current workspace */
             > #zen-workspaces-button {
                 display: none !important;
             }

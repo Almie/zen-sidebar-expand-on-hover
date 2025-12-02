@@ -13,6 +13,7 @@
 - [ ] Add [Big Essentials Mod](https://zen-browser.app/mods/9bbaab67-a2c8-4d79-837f-90cd72a8932a/) support
 - [ ] Fix window controls shifting to sidebar when tabs are placed on right
 - [ ] Fix - Folder Search Popup: Sidebar collapses upon hovering over the popup
+- [ ] Change navbar-toolbar padding to align with sidebar properly (Happens on varying var(--zen-element-separation) values)
 
 ## How to Download
 Download with Sine Mod Manager (Recommended): Using Sine will allow this mod to be updated as this mod receives updates through github.

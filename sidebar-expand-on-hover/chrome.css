@@ -103,6 +103,12 @@
                 var(--tab-min-width) + var(--tab-block-margin)
             ) !important;
         }
+        /* Fuann-Kinoko - https://github.com/Uiniel/zen-mods/issues/76#issuecomment-2884305863
+        Fix abrupt truncation on current tab indicator by enforcing a minimum width
+        */
+        .zen-workspace-tabs-section:not(.zen-essentials-container) {
+            min-width: 100% !important;
+        }
 
         tab[pinned]:not([zen-essential]) > stack {
             --tab-inline-padding: 8px !important;

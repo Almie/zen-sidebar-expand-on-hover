@@ -1,6 +1,8 @@
 :root {
+    /*--theme-sidebar_expand_on_hover-essentials_expanded_tab_width: 75px; /*to-do, - should be actual width of each essential tab, should only be adjusted if some other mod changes the tab size*/
     --theme-sidebar_expand_on_hover-essentials_collapsed_tab_margin: 0px; /*adjust vertical spacing between each essential tab*/
-    --theme-sidebar_expand_on_hover-essentials_collapsed_tab_width: 150px;
+    --theme-sidebar_expand_on_hover-essentials_collapsed_columns: 2; /*adjustable number of columns*/
+    --theme-sidebar_expand_on_hover-essentials_collapsed_width: calc(var(--theme-sidebar_expand_on_hover-expanded_width) / var(--theme-sidebar_expand_on_hover-essentials_collapsed_columns)); /*Expanded Sidebar width / Convert columns to px*/
     /* ^ Make value adjustable friendly as columns later?
   75px (1 grid)
   150px (2 grid)
@@ -561,28 +563,6 @@ Sidebar Expand on Hover Experimental Features
             }
         }
 
-        .zen-essentials-container {
-            transition:
-                transform var(--theme-sidebar_expand_on_hover-transition_speed)
-                    ease-out,
-                display 0s linear 0.3s !important;
-            width: var(
-                --theme-sidebar_expand_on_hover-essentials_collapsed_tab_width
-            ) !important; /* adjustable - horizontal spacing*/
-
-            transform: scaleX(0.25) !important;
-            transform-origin: top left !important;
-        }
-
-        .zen-essentials-container > .tabbrowser-tab,
-        #zen-welcome-initial-essentials-browser-sidebar-essentials
-            .tabbrowser-tab {
-            &:not([visuallyselected], [multiselected="true"]) .tab-background {
-                background: none !important;
-                border: none;
-            }
-        }
-
         .zen-current-workspace-indicator {
             display: flex !important;
             justify-content: flex-start !important;
@@ -685,17 +665,20 @@ Sidebar Expand on Hover Experimental Features
         }
 
         .zen-essentials-container {
+            transition:
+                transform var(--theme-sidebar_expand_on_hover-transition_speed)
+                    ease-out,
+                display 0s linear 0.3s !important;
+            width: var(
+                --theme-sidebar_expand_on_hover-essentials_collapsed_width
+            ) !important; /* adjustable - horizontal spacing*/
+
+            transform: scaleX(0.25) !important; /* Squish Essentials to fit into collapsed sidebar */
+            transform-origin: top left !important;
             height: var(
                 --theme-sidebar_expand_on_hover-essentials_collapsed_tab_height
             ) !important;
-            /*
-            transition: transform var(--theme-sidebar_expand_on_hover-transition_speed) ease-out,
-                        display 0s linear 0.3s !important;
-            width: 300px !important;
 
-            transform: scaleX(0.25) !important;
-            transform-origin: top left !important;
-            */
             > .tabbrowser-tab {
                 justify-content: center !important;
                 margin: var(
@@ -708,7 +691,7 @@ Sidebar Expand on Hover Experimental Features
                 margin-left: 15px !important;
                 background: none !important;
 
-                transform: scaleX(4) !important;
+                transform: scaleX(4) !important; /* Undo Essentials Tab **Icon** Squishing */
             }
 
             /*
@@ -721,6 +704,15 @@ Sidebar Expand on Hover Experimental Features
                   width: 16px !important;
               }
             */
+        }
+
+
+        .zen-essentials-container > .tabbrowser-tab,
+        #zen-welcome-initial-essentials-browser-sidebar-essentials
+            .tabbrowser-tab {
+            &:not([visuallyselected], [multiselected="true"]) .tab-background {
+                background: none !important;
+            }
         }
     }
 

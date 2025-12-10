@@ -300,15 +300,11 @@
             }
 
             /* Hide empty top buttons */
-            #zen-sidebar-buttons:not(
-                :has(
-                    :not(
-                        #zen-sidebar-top-buttons-separator,
-                        #zen-sidebar-top-buttons-customization-target
-                    )
-                )
+            #zen-sidebar-top-buttons:not([customizing]):has(
+            #zen-sidebar-top-buttons-customization-target:empty, /* When no toolbar items */
+            #zen-sidebar-top-buttons-customization-target > #zen-sidebar-top-buttons-separator:only-child /* Sometimes this toolbar item shows up by itself, no idea why*/
             ) {
-                display: none !important;
+                display: none !important; /* Hide the unnecessary empty space */
             }
 
             #zen-sidebar-bottom-buttons,

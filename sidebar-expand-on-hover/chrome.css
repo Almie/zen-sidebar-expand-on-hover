@@ -48,12 +48,6 @@
         --zen-toolbox-min-width: 1px !important;
         --zen-sidebar-width: var(--zen-toolbox-max-width) !important;
 
-        @media (-moz-bool-pref: "theme.sidebar_expand_on_hover.hide_workspace_indicator") {
-            .zen-current-workspace-indicator {
-                display: none !important;
-            }
-        }
-
         #zen-sidebar-splitter {
             display: none !important;
         }
@@ -476,7 +470,7 @@
                     margin-inline: 0 !important;
                 }
 
-                /*Workaround for invisible top buttons seperator*/
+                /*to-do*/ /*Workaround for invisible top buttons seperator*/
                 #zen-sidebar-top-buttons-customization-target
                     > :not(:nth-child(1 of toolbarbutton, toolbaritem)) {
                     flex-grow: 0 !important;
@@ -585,6 +579,13 @@ Sidebar Expand on Hover Experimental Features
             > .zen-current-workspace-indicator-icon:is([no-icon])
                 ~ .zen-current-workspace-indicator-name {
                 display: block !important;
+            }
+        }
+
+        /* Override and hide workspace indicator when pref is set */
+        @media (-moz-bool-pref: "theme.sidebar_expand_on_hover.hide_workspace_indicator") {
+            .zen-current-workspace-indicator {
+                display: none !important;
             }
         }
 
@@ -739,6 +740,12 @@ Sidebar Expand on Hover Experimental Features
         */
         :has(#TabsToolbar[open="true"]) /* When edit theme picker is open */
     ) {
+        @media (-moz-bool-pref: "theme.sidebar_expand_on_hover.hide_workspace_indicator") {
+            .zen-current-workspace-indicator {
+                display: none !important;
+            }
+        }
+
         /* revert changes made )*/
         #zen-sidebar-foot-buttons {
             /*padding-left: 7px !important;

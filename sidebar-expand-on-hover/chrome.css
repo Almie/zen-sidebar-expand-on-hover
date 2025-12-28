@@ -24,7 +24,8 @@
 
     /* Expanded Sidebar BG -
   The --theme-sidebar_expand_on_hover-if_background_gradient variable is going to be used to set up an if()-like statement below. (The checking happens here (instead of where it is used later on) because CSS doesnt allow for checking elements outside of parent.) */
-    #main-window[style*="--zen-main-browser-background: linear-gradient"] {
+    #main-window[style*="--zen-main-browser-background: linear-gradient"], /* Support Zen versions below 1.17.13b */
+    #main-window[style*="--zen-main-browser-background: radial-gradient"] /* Support Zen versions above 1.17.13b */ {
         /*if the browser background is a gradient...*/
         --theme-sidebar_expand_on_hover-if_background_gradient: var(
             --zen-main-browser-background

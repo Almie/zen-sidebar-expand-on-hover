@@ -37,6 +37,7 @@ This fork fixes compatibility with newer Zen versions + a few of my own features
 - [ ] Fix - Only Sidebar layout support
 - [x] Fix accidental sidebar expand on empty top buttons (sidebar toolbar) hover
 - [ ] Fix having no Essentials causes empty padding
+- [x] Fix radial gradient support for Zen 1.17.13b
 
 ## How to Download
 ### Download with Sine Mod Manager (Recommended)

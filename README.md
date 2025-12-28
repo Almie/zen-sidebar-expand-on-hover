@@ -5,7 +5,7 @@ My personally (and actively!) maintained version of Sidebar Expand on Hover.
 This fork fixes compatibility with newer Zen versions + a few of my own features added in.
 
 ### Highlights
-- Fixed compatibility for Zen v1.17.11b! 
+- Fixed compatibility for Zen v1.17.11b-1.18t! 
 - Added: Collapsed Essentials, Collapsed Folders, etc.
 
 <table>
@@ -26,7 +26,9 @@ This fork fixes compatibility with newer Zen versions + a few of my own features
 </table>
 
 ## To do
-- [ ] Add configurable/revertable options
+> ```*``` = priority
+
+- [ ] Add configurable/revertable options*
 - [ ] Improve Animations (Essentials Animation between expanded/collapsed state)
 - [x] Fix abrupt truncation on current tab indicator [Referenced from #76](https://github.com/Uiniel/zen-mods/issues/76#issuecomment-2884305863)
 - [x] Hide scrollbar on collapsed sidebar [Referenced from #76](https://github.com/Uiniel/zen-mods/issues/76#issuecomment-2852383433)
@@ -36,7 +38,7 @@ This fork fixes compatibility with newer Zen versions + a few of my own features
 - [ ] Change titlebar (navbar-toolbar) padding to align with sidebar properly (Happens on varying var(--zen-element-separation) values)
 - [ ] Fix - Only Sidebar layout support
 - [x] Fix accidental sidebar expand on empty top buttons (sidebar toolbar) hover
-- [ ] Fix having no Essentials causes empty padding
+- [x] Fix having no Essentials causes empty padding
 - [x] Fix radial gradient support for Zen 1.17.13b
 
 ## How to Download

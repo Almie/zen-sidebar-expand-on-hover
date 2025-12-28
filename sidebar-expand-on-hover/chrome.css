@@ -1,3 +1,8 @@
+/*
+    Sidebar Expand on Hover
+*/
+
+/* Set default values */
 :root {
     /*--theme-sidebar_expand_on_hover-essentials_expanded_tab_width: 75px; /*to-do, - should be actual width of each essential tab, should only be adjusted if some other mod changes the tab size*/
     --theme-sidebar_expand_on_hover-essentials_collapsed_tab_margin: 0px; /*adjust vertical spacing between each essential tab*/
@@ -662,8 +667,15 @@ Experimental Features
         * the number of children (.tabbrowser-tab) inside the .zen-essentials-container
         * and sets the --theme-sidebar_expand_on_hover-essentials_collapsed_tab_height variable accordingly.
         */
+        /* --- 0 children (Does not have a 1st child) --- */
+        &:not(:has(.zen-essentials-container > .tabbrowser-tab:first-child)) {
+            --theme-sidebar_expand_on_hover-essentials_collapsed_tab_height: 0px; /*Each row of essentials is +50px tall*/
+        }
+
         /* --- RANGE 1: 1 to 4 children (Does not have a 5th child) --- */
-        &:not(:has(.zen-essentials-container > .tabbrowser-tab:nth-child(5))) {
+        &:has(.zen-essentials-container > .tabbrowser-tab:nth-child(1)):not(
+                :has(.zen-essentials-container > .tabbrowser-tab:nth-child(5))
+            ) {
             --theme-sidebar_expand_on_hover-essentials_collapsed_tab_height: 50px; /*Each row of essentials is +50px tall*/
         }
 

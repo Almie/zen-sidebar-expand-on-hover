@@ -1,5 +1,22 @@
 [
   {
+    "type": "dropdown",
+    "property": "theme.sidebar_expand_on_hover.collapsed_essentials_style",
+    "label": "Collapsed Essentials Style",
+    "value": "string",
+    "defaultValue": "Condensed",
+    "options": [
+      {
+        "value": "Condensed",
+        "label": "Condensed"
+      },
+      {
+        "value": "Spaced-Out",
+        "label": "Spaced-Out"
+      }
+    ]
+  },
+  {
     "property": "theme.sidebar_expand_on_hover.hide_workspace_indicator",
     "label": "Hide top workspace indicator",
     "type": "checkbox",

@@ -577,17 +577,20 @@ Experimental Features
         :has(.tab-label-container-editing),
         :has(#TabsToolbar[open="true"]) /* When edit theme picker is open */
     ) {
-        /* OPTIONAL - align sidebar foot buttons vertically */
-        #zen-sidebar-foot-buttons {
-            /*  padding-left: 3px !important; */
-            flex-direction: column !important;
-            justify-content: center !important;
-            > #zen-create-new-button {
-                display: none !important;
-            }
-            /* to-do: the collapsed sidebar view is only big enough to show the current workspace */
-            > #zen-workspaces-button {
-                display: none !important;
+        /* Align sidebar foot buttons vertically in columns when pref is set*/
+        @media (-moz-bool-pref: "theme.sidebar_expand_on_hover.align_buttons") {
+            #zen-sidebar-foot-buttons {
+                /*  padding-left: 3px !important; */
+                flex-direction: column !important;
+                justify-content: center !important;
+
+                > #zen-create-new-button {
+                    display: none !important;
+                }
+
+                > #zen-workspaces-button {
+                    display: none !important;
+                }
             }
         }
 

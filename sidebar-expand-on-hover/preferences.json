@@ -29,6 +29,12 @@
     "defaultValue": true
   },
   {
+    "property": "theme.sidebar_expand_on_hover.align_buttons",
+    "label": "Center the sidebar foot buttons in columns on collapsed sidebar view.",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
     "property": "theme.sidebar_expand_on_hover.inverted_tabs",
     "label": "Inverted Tab Direction",
     "type": "checkbox",

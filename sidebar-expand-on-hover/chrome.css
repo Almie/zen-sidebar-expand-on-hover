@@ -622,19 +622,32 @@ Experimental Features
             }
         }
 
-        .tab-group-container > zen-folder {
-            /*all nested folders*/
-            margin-left: 8px !important; /*limit margin*/
-
+        zen-folder {
             @media (-moz-pref("theme.sidebar_expand_on_hover.collapsed_folder_style", "side_border")) {
                 background: linear-gradient(
                     to right,
-                    /* to-do: use "to left" when tabs on right is enabled */
-                        #ffffff20 10%,
+                    #ffffff50 10%,
                     transparent 10%
                 ) !important;
                 background-position: left;
             }
+        }
+
+        .tab-group-container > zen-folder:nth-of-type(1n) {
+            /*all nested folders*/
+            margin-left: 8px !important; /*limit margin*/
+            @media (-moz-pref("theme.sidebar_expand_on_hover.collapsed_folder_style", "side_border")) {
+                background: linear-gradient(
+                    to right,
+                    #ffffff60 10%,
+                    transparent 10%
+                ) !important;
+                background-position: left;
+            }
+        }
+
+        .tab-group-container {
+            margin-left: -8px !important; /* limit margin*/ /* is negative of the other value */
         }
 
         /*MEDIA CONTROLS - optional*/

@@ -30,7 +30,7 @@ This fork fixes compatibility with newer Zen versions + a few of my own features
 
 - [ ] Add configurable/revertable options*
     - [x] Configurable Collapsed Essentials Styles
-    - [ ] Folder Decorations
+    - [x] Folder Decorations
     - [x] Center top/bottom sidebar buttons
 - [ ] Improve Animations (Essentials Animation between expanded/collapsed state)
 - [x] Fix abrupt truncation on current tab indicator [Referenced from #76](https://github.com/Uiniel/zen-mods/issues/76#issuecomment-2884305863)

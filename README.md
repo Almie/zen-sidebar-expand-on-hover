@@ -1,4 +1,5 @@
 # Sidebar Expand on Hover
+> Download with Sine [here](#download-with-sine-mod-manager-recommended)
 
 My personally (and actively!) maintained version of Sidebar Expand on Hover.
 
@@ -26,20 +27,21 @@ This fork fixes compatibility with newer Zen versions + a few of my own features
 </table>
 
 ## To do
-> ```*``` = priority
+> ```*``` = priority  |  ```[strikethrough]``` = not planned
 
 - [ ] Add configurable/revertable options*
     - [x] Configurable Collapsed Essentials Styles
     - [x] Folder Decorations
     - [x] Center top/bottom sidebar buttons
 - [ ] Improve Animations (Essentials Animation between expanded/collapsed state)
+- [ ] Add [Big Essentials Mod](https://zen-browser.app/mods/9bbaab67-a2c8-4d79-837f-90cd72a8932a/) support
+  ### Fixes
 - [x] Fix abrupt truncation on current tab indicator [Referenced from #76](https://github.com/Uiniel/zen-mods/issues/76#issuecomment-2884305863)
 - [x] Hide scrollbar on collapsed sidebar [Referenced from #76](https://github.com/Uiniel/zen-mods/issues/76#issuecomment-2852383433)
-- [ ] Add [Big Essentials Mod](https://zen-browser.app/mods/9bbaab67-a2c8-4d79-837f-90cd72a8932a/) support
-- [ ] Fix window controls shifting to sidebar when tabs are placed on right
-- [ ] Fix - Folder Search Popup: Sidebar collapses upon hovering over the popup
+- [ ] ~~Fix window controls shifting to sidebar when tabs are placed on right~~
+- [ ] ~~Fix - Folder Search Popup: Sidebar collapses upon hovering over the popup~~
 - [ ] Change titlebar (navbar-toolbar) padding to align with sidebar properly (Happens on varying var(--zen-element-separation) values)
-- [ ] Fix - Only Sidebar layout support
+- [ ] ~~Fix - Only Sidebar layout support~~
 - [x] Fix accidental sidebar expand on empty top buttons (sidebar toolbar) hover
 - [x] Fix having no Essentials causes empty padding
 - [x] Fix radial gradient support for Zen 1.17.13b

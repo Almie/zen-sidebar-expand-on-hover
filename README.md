@@ -5,6 +5,8 @@ My personally (and actively!) maintained version of Sidebar Expand on Hover.
 
 This fork fixes compatibility with newer Zen versions + a few of my own features added in.
 
+I don't necessarily plan to bring any more features or any old ones not included in the to-do list, but feel free to open a PR if you want to add something. Or an issue if you find any bugs.
+
 ### Highlights
 - Fixed compatibility for Zen v1.17.11b-1.18t! 
 - Added: Collapsed Essentials, Collapsed Folders, etc.
@@ -41,12 +43,12 @@ This fork fixes compatibility with newer Zen versions + a few of my own features
 - [x] Hide scrollbar on collapsed sidebar [Referenced from #76](https://github.com/Uiniel/zen-mods/issues/76#issuecomment-2852383433)
 - [ ] ~~Fix window controls shifting to sidebar when tabs are placed on right~~
 - [ ] ~~Fix - Folder Search Popup: Sidebar collapses upon hovering over the popup~~
-- [ ] Change titlebar (navbar-toolbar) padding to align with sidebar properly (Happens on varying var(--zen-element-separation) values)
+- [ ] ~~Change titlebar (navbar-toolbar) padding to align with sidebar properly (Happens on varying var(--zen-element-separation) values)~~
 - [ ] Fix - Only Sidebar layout support
 - [x] Fix accidental sidebar expand on empty top buttons (sidebar toolbar) hover
 - [x] Fix having no Essentials causes empty padding
 - [x] Fix radial gradient support for Zen 1.17.13b
-- [ ] Fix Collapsed Essentials to adjust acoordingly to expanded sidebar width
+- [ ] Fix Collapsed Essentials to be compatible with varying expanded sidebar width values
 
 ## How to Download
 ### Download with Sine Mod Manager (Recommended)
@@ -80,8 +82,8 @@ Addionally this mod collapses the buttons below the tabs to provide a smoother e
 
 ## Preferences
 - **Collapsed Essentials Style**: Choose between the Condensed Style or the more minimalistic Spaced-Out Style (transitions between expanded/collapsed sidebar states better visually) *(default: condensed)*
-- **Hide top workspace indicator**: since the active workspace is already shown below, this theme hides the workspace indicator at the top, if you don't want this: deactivate this setting. *(default: on)*
-- **Collapse the buttons to only show current workspace**: If you don't wish for your buttons to only show your current workspace when collapsed: deactivate this setting and it shows the first button instead when collapsed *(default: on)*
+- **Hide top workspace indicator**: since the active workspace is already shown below, this theme hides the workspace indicator at the top (Uncheck to swap). *(default: off)*
+- ~~**Collapse the buttons to only show current workspace**: If you don't wish for your buttons to only show your current workspace when collapsed: deactivate this setting and it shows the first button instead when collapsed *(default: on)*~~
 - **Inverted Tab Direction**: Favicon on the right, title in the middle, close button on the left. Less moving parts when the sidebar is on the right. *(default: off)*
 - **Width of the expanded sidebar**: Here you can change the width of the expanded sidebar *(default: 300px)*
 - **Transition speed of the sidebar**: Speed of the collapsing/expanding animation *(default: 120ms)*

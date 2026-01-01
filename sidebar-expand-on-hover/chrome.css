@@ -508,28 +508,6 @@
                     margin-inline: 0 !important;
                 }
 
-                @media not (-moz-bool-pref: "theme.sidebar_expand_on_hover.collapse_buttons") {
-                    #zen-sidebar-bottom-buttons > :not(:first-child) {
-                        flex-grow: 0 !important;
-                        width: 0 !important;
-                        min-width: 0 !important;
-                        margin-inline: 0 !important;
-                    }
-                }
-
-                @media (-moz-bool-pref: "theme.sidebar_expand_on_hover.collapse_buttons") {
-                    /* Show first child only when no visible workspace switcher */
-                    #zen-sidebar-bottom-buttons:not(:has(#zen-workspaces-button:not([dont-show="true"]))) > :not(:first-child),
-              /* Show active workspace only when visible workspace switcher */
-              #zen-sidebar-bottom-buttons:has(#zen-workspaces-button:not([dont-show="true"])) > :not(#zen-workspaces-button) {
-                        flex-grow: 0 !important;
-                        width: 0 !important;
-                        min-width: 0 !important;
-                        margin-inline: 0 !important;
-                    }
-                }
-            }
-
             /* Support for tabs on the right */
             #navigator-toolbox[zen-right-side="true"] {
                 direction: rtl !important;

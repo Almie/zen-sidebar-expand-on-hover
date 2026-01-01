@@ -18,7 +18,7 @@
   },
   {
     "property": "theme.sidebar_expand_on_hover.collapsed_folder_style",
-    "label": "Folder Indicator Style",
+    "label": "Collapsed Folder Indicator Style",
     "type": "dropdown",
     "value": "string",
     "options": [
@@ -35,14 +35,8 @@
     "defaultValue": false
   },
   {
-    "property": "theme.sidebar_expand_on_hover.collapse_buttons",
-    "label": "Collapse the buttons to only show current workspace",
-    "type": "checkbox",
-    "defaultValue": true
-  },
-  {
     "property": "theme.sidebar_expand_on_hover.align_buttons",
-    "label": "Align the sidebar foot buttons vertically (in columns) on collapsed sidebar view.",
+    "label": "Align the sidebar foot buttons vertically (in columns) on collapsed sidebar view",
     "type": "checkbox",
     "defaultValue": true
   },

@@ -44,13 +44,15 @@ I don't necessarily plan to bring any more features or any old ones not included
 - [ ] ~~Fix window controls shifting to sidebar when tabs are placed on right~~
 - [ ] ~~Fix - Folder Search Popup: Sidebar collapses upon hovering over the popup~~
 - [ ] ~~Change titlebar (navbar-toolbar) padding to align with sidebar properly (Happens on varying var(--zen-element-separation) values)~~
-- [ ] Fix - Only Sidebar layout support
+- [x] Fix - Only Sidebar layout support
 - [x] Fix accidental sidebar expand on empty top buttons (sidebar toolbar) hover
 - [x] Fix having no Essentials causes empty padding
 - [x] Fix radial gradient support for Zen 1.17.13b
 - [ ] Fix Collapsed Essentials to be compatible with varying expanded sidebar width values*
 
 ## How to Download
+> **Important:** set the browser layout to Single Toolbar or Multiple Toolbar depending on how the expanded sidebar should look like after you install this mod.
+
 ### Download with Sine Mod Manager (Recommended)
 Using Sine will allow this mod to be updated as this mod receives updates through github.
 

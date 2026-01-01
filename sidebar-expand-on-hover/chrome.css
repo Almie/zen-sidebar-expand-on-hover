@@ -580,7 +580,6 @@ Experimental Features
         /* Align sidebar foot buttons vertically in columns when pref is set*/
         @media (-moz-bool-pref: "theme.sidebar_expand_on_hover.align_buttons") {
             #zen-sidebar-foot-buttons {
-                /*  padding-left: 3px !important; */
                 flex-direction: column !important;
                 justify-content: center !important;
 
@@ -800,9 +799,9 @@ Experimental Features
 
         /* revert changes made )*/
         #zen-sidebar-foot-buttons {
-            /*padding-left: 7px !important;
-            padding-right: 7px !important;
-            padding-bottom: 1px !important;*/
+            padding-left: 6px !important; /* to-do: change from fixed value? */
+            padding-right: 6px !important; /* to-do: change from fixed value? */
+            /*padding-bottom: 1px !important;*/
             flex-direction: row !important;
         }
 

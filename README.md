@@ -48,7 +48,7 @@ I don't necessarily plan to bring any more features or any old ones not included
 - [x] Fix accidental sidebar expand on empty top buttons (sidebar toolbar) hover
 - [x] Fix having no Essentials causes empty padding
 - [x] Fix radial gradient support for Zen 1.17.13b
-- [ ] Fix Collapsed Essentials to be compatible with varying expanded sidebar width values
+- [ ] Fix Collapsed Essentials to be compatible with varying expanded sidebar width values*
 
 ## How to Download
 ### Download with Sine Mod Manager (Recommended)

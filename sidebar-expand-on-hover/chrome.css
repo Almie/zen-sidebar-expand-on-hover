@@ -20,13 +20,13 @@
 }
 
 /* Collapsed Essential Styles */
-@media (-moz-pref("theme.sidebar_expand_on_hover.collapsed_essentials_style", "condensed")) {
+@media (-moz-pref:"theme.sidebar_expand_on_hover.collapsed_essentials_style", "condensed") {
     :root {
         --theme-sidebar_expand_on_hover-essentials_collapsed_tab_margin: -12px; /*adjust vertical spacing between each essential tab*/
     }
 }
 
-@media (-moz-pref("theme.sidebar_expand_on_hover.collapsed_essentials_style", "spaced-out")) {
+@media (-moz-pref:"theme.sidebar_expand_on_hover.collapsed_essentials_style", "spaced-out") {
     :root {
         --theme-sidebar_expand_on_hover-essentials_collapsed_tab_margin: 0px; /*adjust vertical spacing between each essential tab*/
     }
@@ -602,7 +602,7 @@ Experimental Features
         }
 
         zen-folder {
-            @media (-moz-pref("theme.sidebar_expand_on_hover.collapsed_folder_style", "side_border")) {
+            @media (-moz-pref:"theme.sidebar_expand_on_hover.collapsed_folder_style", "side_border") {
                 background: linear-gradient(
                     to right,
                     #ffffff50 10%,
@@ -615,7 +615,7 @@ Experimental Features
         .tab-group-container > zen-folder:nth-of-type(1n) {
             /*all nested folders*/
             margin-left: 8px !important; /*limit margin*/
-            @media (-moz-pref("theme.sidebar_expand_on_hover.collapsed_folder_style", "side_border")) {
+            @media (-moz-pref:"theme.sidebar_expand_on_hover.collapsed_folder_style", "side_border") {
                 background: linear-gradient(
                     to right,
                     #ffffff60 10%,

@@ -692,6 +692,7 @@ Experimental Features
             margin-left: var(--zen-toolbox-padding) !important;*/
             grid-template-columns: repeat(var(--theme-sidebar_expand_on_hover-essentials_collapsed_columns), 1fr) !important;
             grid-auto-rows: 25px;
+            gap: 0px !important;
 
             transition:
                 transform var(--theme-sidebar_expand_on_hover-transition_speed)
@@ -713,6 +714,16 @@ Experimental Features
 
                 .tab-background {
                     border-radius: calc(var(--border-radius-medium)/var(--theme-sidebar_expand_on_hover-essentials_collapsed_columns)) !important;
+                    margin: 0px !important;
+                    background: var(--zen-essential-tab-selected-bg);
+                    background-image: none !important;
+                    
+                    .tab-icon-image{
+                        display:none;
+                    }
+                    &::before{
+                        display:none;
+                    }
                 }
 
                 .tab-content {

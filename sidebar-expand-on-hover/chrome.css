@@ -702,7 +702,7 @@ Experimental Features
             /* Same thing
             margin-left: var(--zen-toolbox-padding) !important;*/
             grid-template-columns: repeat(var(--theme-sidebar_expand_on_hover-essentials_collapsed_columns), 1fr) !important;
-            grid-auto-rows: 50px;
+            grid-auto-rows: 25px;
 
             transition:
                 transform var(--theme-sidebar_expand_on_hover-transition_speed)
@@ -712,9 +712,6 @@ Experimental Features
                 --zen-sidebar-width
             ) / var(--theme-sidebar_expand_on_hover-essentials_collapsed_columns)) !important; /* adjustable - horizontal spacing*/
 
-            /*transform: scaleX(
-                0.25
-            ) !important; /* Squish Essentials to fit into collapsed sidebar */
             transform-origin: top left !important;
             height: auto !important;
 
@@ -725,16 +722,12 @@ Experimental Features
                 /*--tab-min-width: 50px;*/
                 /*left: 10px !important;*/
 
-                transform: scaleX(
-                    4
-                ) !important; /* Undo Essentials Tab **Icon** Squishing */
-
                 .tab-background {
-                    width: 20px !important;
-                    min-height: 10px !important;
-                    height: 30px !important;
-                    transform: translate(24px, 12px) !important;
                     border-radius: calc(var(--border-radius-medium)/var(--theme-sidebar_expand_on_hover-essentials_collapsed_columns)) !important;
+                }
+
+                .tab-content{
+                    padding: 0;
                 }
             }
 

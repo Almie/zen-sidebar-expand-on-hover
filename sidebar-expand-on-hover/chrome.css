@@ -702,6 +702,7 @@ Experimental Features
             /* Same thing
             margin-left: var(--zen-toolbox-padding) !important;*/
             grid-template-columns: repeat(var(--theme-sidebar_expand_on_hover-essentials_collapsed_columns), 1fr);
+            grid-auto-rows: 50px;
 
             transition:
                 transform var(--theme-sidebar_expand_on_hover-transition_speed)
@@ -715,9 +716,7 @@ Experimental Features
                 0.25
             ) !important; /* Squish Essentials to fit into collapsed sidebar */
             transform-origin: top left !important;
-            height: var(
-                --theme-sidebar_expand_on_hover-essentials_collapsed_tab_height
-            ) !important;
+            height: auto !important;
 
             > .tabbrowser-tab {
                 justify-content: center !important;

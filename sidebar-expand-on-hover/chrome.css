@@ -698,16 +698,17 @@ Experimental Features
 
         .zen-essentials-container {
             /* Center collapsed essentials container */
-            left: 0 !important;
+            /*left: 0 !important;*/
             /* Same thing
             margin-left: var(--zen-toolbox-padding) !important;*/
+            grid-template-columns: repeat(var(--theme-sidebar_expand_on_hover-essentials_collapsed_columns), 1fr);
 
             transition:
                 transform var(--theme-sidebar_expand_on_hover-transition_speed)
                     ease-out,
                 display 0s linear 0.3s !important;
             width: var(
-                --theme-sidebar_expand_on_hover-essentials_collapsed_width
+                --zen-sidebar-width
             ) !important; /* adjustable - horizontal spacing*/
 
             transform: scaleX(
@@ -736,6 +737,7 @@ Experimental Features
                     min-height: 10px !important;
                     height: 30px !important;
                     transform: translate(24px, 12px) !important;
+                    border-radius: calc(var(--border-radius-medium)/var(--theme-sidebar_expand_on_hover-essentials_collapsed_columns)) !important;
                 }
             }
 
@@ -749,6 +751,10 @@ Experimental Features
                   width: 16px !important;
               }
             */
+        }
+
+        .zen-essentials-container[hidden] {
+            height: 0;
         }
 
         .zen-essentials-container > .tabbrowser-tab,

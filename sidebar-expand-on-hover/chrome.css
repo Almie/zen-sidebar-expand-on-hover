@@ -714,7 +714,7 @@ Experimental Features
                 .tab-background {
                     border-radius: calc(var(--border-radius-medium)/var(--theme-sidebar_expand_on_hover-essentials_collapsed_columns)) !important;
                     margin: 0px !important;
-                    /*transition: all var(--theme-sidebar_expand_on_hover-transition_speed) ease-out !important;*/
+                    transition: min-height var(--theme-sidebar_expand_on_hover-transition_speed) ease-out !important;
                     
                     /* .tab-icon-image{
                         opacity:0;
@@ -762,7 +762,7 @@ Experimental Features
         #zen-welcome-initial-essentials-browser-sidebar-essentials
             .tabbrowser-tab {
             &:not([visuallyselected], [multiselected="true"]) .tab-background {
-                background: none !important;
+                opacity: 0;
             }
         }
     }
@@ -809,6 +809,10 @@ Experimental Features
             transition: grid-template-columns 0s linear var(--theme-sidebar_expand_on_hover-transition_speed) !important;
             transition-behavior: allow-discrete !important;
             /*transition: clamp(80ms, calc(var(--theme-sidebar_expand_on_hover-transition_speed) - 60ms)) linear !important;*/
+
+            .tab-background{
+                transition: min-height var(--theme-sidebar_expand_on_hover-transition_speed) ease-out !important;
+            }
         }
 
         /*to-do --zen-toolbox-padding: calc(0px) !important;*/

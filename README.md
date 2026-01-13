@@ -1,4 +1,5 @@
 # Sidebar Expand on Hover
+
 > Download with Sine Mod Manager [here](#download-with-sine-mod-manager-recommended)
 
 My personally (and actively!) maintained version of Sidebar Expand on Hover.
@@ -8,7 +9,8 @@ This fork fixes compatibility with newer Zen versions + a few of my own features
 I don't necessarily plan to bring any more features or any old ones not included in the to-do list, but feel free to open a PR if you want to add something. Or an issue if you find any bugs.
 
 ### Highlights
-- Fixed compatibility for Zen v1.17.11b-1.18t! 
+
+- Fixed compatibility for Zen v1.17.11b-1.18t!
 - Added: Collapsed Essentials, Collapsed Folders, etc.
 
 <table>
@@ -29,18 +31,19 @@ I don't necessarily plan to bring any more features or any old ones not included
 </table>
 
 ## To do
-> ```*``` = priority  |  ```[strikethrough]``` = not planned
 
-- [ ] Add configurable/revertable options*
+> `*` = priority | `[strikethrough]` = not planned
+
+- [ ] Add configurable/revertable options\*
     - [x] Configurable Collapsed Essentials Styles
     - [x] Folder Decorations
     - [x] Center top/bottom sidebar buttons
     - [ ] Option to revert collapsed Essentials (for performance)
 - [ ] Collapsed buttons?: Show only first foot item, and show active buttons when active (e.g. downloading file)
-  - For now you can disable the preference: align sidebar foot buttons vertically, so that they don't take up space
+    - For now you can disable the preference: align sidebar foot buttons vertically, so that they don't take up space
 - [ ] Improve Animations (Essentials Animation between expanded/collapsed state)
 - [ ] Add [Big Essentials Mod](https://zen-browser.app/mods/9bbaab67-a2c8-4d79-837f-90cd72a8932a/) support
-  ### Fixes
+    ### Fixes
 - [x] Fix abrupt truncation on current tab indicator: [Uiniel#76](https://github.com/Uiniel/zen-mods/issues/76#issuecomment-2884305863)
 - [x] Hide scrollbar on collapsed sidebar: [Uiniel#76](https://github.com/Uiniel/zen-mods/issues/76#issuecomment-2852383433)
 - [ ] ~~Fix window controls shifting to sidebar when tabs are placed on right~~
@@ -50,14 +53,16 @@ I don't necessarily plan to bring any more features or any old ones not included
 - [x] Fix accidental sidebar expand on empty top buttons (sidebar toolbar) hover
 - [x] Fix having no Essentials causes empty padding
 - [x] Fix radial gradient support for Zen 1.17.13b
-- [ ] Fix Collapsed Essentials to be compatible with varying expanded sidebar width values*
+- [ ] Fix Collapsed Essentials to be compatible with varying expanded sidebar width values\*
 - [ ] Fix macOS support: toolbar and window controls
-- [ ] Delay Expand on Hover: [Uiniel#44](https://github.com/Uiniel/zen-mods/issues/44) 
+- [ ] Delay Expand on Hover: [Uiniel#44](https://github.com/Uiniel/zen-mods/issues/44)
 
 ## How to Download
+
 > **Important:** set the browser layout to Single Toolbar or Multiple Toolbar depending on how the expanded sidebar should look like after you install this mod.
 
 ### Download with Sine Mod Manager (Recommended)
+
 Using Sine will allow this mod to be updated as this mod receives updates through github.
 
 > Sine Mod Manager: <https://github.com/CosmoCreeper/Sine>
@@ -65,9 +70,10 @@ Using Sine will allow this mod to be updated as this mod receives updates throug
 1. Download Sine Mod Manager (if not already installed)
 2. Open Settings -> Sine Mods (`about:preferences#sineMods`)
     - You can enable auto-updates here too
-3. Under the "add your own [mod] locally from a GitHub repo." input box, insert `pythonr0ck/zen-mods/tree/main/sidebar-expand-on-hover` and click on the install button.
+3. Under the "add your own [mod] locally from a GitHub repo." input box, insert `Almie/zen-sidebar-expand-on-hover/tree/main/sidebar-expand-on-hover` and click on the install button.
 
 ### Download Manually
+
 Installing the mod manually is not recommended because it **cannot update itself**. Please use the Sine Mod Manager to install.
 
 > Instructions taken from [quop](https://github.com/qoup/zen-mods):
@@ -89,16 +95,18 @@ With this mod the sidebar expands when you hover it. It only works when the brow
 Addionally this mod collapses the buttons below the tabs to provide a smoother experience. Per default your active workspace is shown while the sidebar is collapsed (only works when the workspace switcher is placed there).
 
 ## Preferences
-- **Collapsed Essentials Style**: Choose between the Condensed Style or the more minimalistic Spaced-Out Style (transitions between expanded/collapsed sidebar states better visually) *(default: condensed)*
-- **Hide top workspace indicator**: since the active workspace is already shown below, this theme hides the workspace indicator at the top (Uncheck to swap positions). *(default: off)*
-- **Align the sidebar foot buttons vertically**: If you don't wish for your buttons to be aligned vertically when collapsed: deactivate this setting and it aligns the buttons horizontally (like the OG mod) instead when collapsed *(default: on)*
-- **Inverted Tab Direction**: Favicon on the right, title in the middle, close button on the left. Less moving parts when the sidebar is on the right. *(default: off)*
-- **Width of the expanded sidebar**: Here you can change the width of the expanded sidebar *(default: 300px)*
-- **Transition speed of the sidebar**: Speed of the collapsing/expanding animation *(default: 120ms)*
+
+- **Collapsed Essentials Style**: Choose between the Condensed Style or the more minimalistic Spaced-Out Style (transitions between expanded/collapsed sidebar states better visually) _(default: condensed)_
+- **Hide top workspace indicator**: since the active workspace is already shown below, this theme hides the workspace indicator at the top (Uncheck to swap positions). _(default: off)_
+- **Align the sidebar foot buttons vertically**: If you don't wish for your buttons to be aligned vertically when collapsed: deactivate this setting and it aligns the buttons horizontally (like the OG mod) instead when collapsed _(default: on)_
+- **Inverted Tab Direction**: Favicon on the right, title in the middle, close button on the left. Less moving parts when the sidebar is on the right. _(default: off)_
+- **Width of the expanded sidebar**: Here you can change the width of the expanded sidebar _(default: 300px)_
+- **Transition speed of the sidebar**: Speed of the collapsing/expanding animation _(default: 120ms)_
 
 ---
 
 ## Acknowledgements/Credits
+
 - **[Uiniel](https://github.com/Uiniel)**: Original author of the mod
 - **[qoup](https://github.com/qoup)**: Instructions to download this mod manually
 - **[to do...]**: Everyone who has provided code/fixes in the original mods issue page

@@ -710,9 +710,9 @@ Experimental Features
                 display 0s linear 0.3s !important;
             width: calc(var(
                 --zen-sidebar-width
-            ) * 4) !important; /* adjustable - horizontal spacing*/
+            ) / var(--theme-sidebar_expand_on_hover-essentials_collapsed_columns)) !important; /* adjustable - horizontal spacing*/
 
-            transform: scaleX(
+            /*transform: scaleX(
                 0.25
             ) !important; /* Squish Essentials to fit into collapsed sidebar */
             transform-origin: top left !important;
@@ -720,12 +720,10 @@ Experimental Features
 
             > .tabbrowser-tab {
                 justify-content: center !important;
-                margin: var(
-                    --theme-sidebar_expand_on_hover-essentials_collapsed_tab_margin
-                ) !important; /* adjustable - tab horizontal spacing*/
+                margin: 0 !important; /* adjustable - tab horizontal spacing*/
                 /*--tab-min-height: 46px; /*14px*/
                 /*--tab-min-width: 50px;*/
-                left: 10px !important;
+                /*left: 10px !important;*/
 
                 transform: scaleX(
                     4

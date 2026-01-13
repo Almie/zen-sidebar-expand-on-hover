@@ -715,12 +715,14 @@ Experimental Features
                 .tab-background {
                     border-radius: calc(var(--border-radius-medium)/var(--theme-sidebar_expand_on_hover-essentials_collapsed_columns)) !important;
                     margin: 0px !important;
-                    background: var(--zen-essential-tab-selected-bg);
-                    background-image: none !important;
                     
                     .tab-icon-image{
                         display:none;
                     }
+                    .tab-context-line{
+                        display:none;
+                    }
+
                     &::before{
                         display:none;
                     }
